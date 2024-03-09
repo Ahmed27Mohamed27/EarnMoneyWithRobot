@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="10dp"
+        app:cardElevation="2dp"
+        android:id="@+id/cardView"
+        android:elevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="2dp"
+            >
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/relative1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/money_bg"
+                android:fontFamily="@font/doppio_one"
+                android:gravity="center"
+                android:minWidth="40dp"
+                android:text="100"
+                android:textColor="#26C7DC"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#26C7DC"
+                android:id="@+id/relative1"
+                android:elevation="2dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="سجل الحالة"
+                    android:gravity="center"
+                    android:textSize="19dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/doppio_one"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext"
+                android:fontFamily="@font/doppio_one"
+                android:gravity="center"
+                android:minWidth="200dp"
+                android:text="Date"
+                android:textColor="#CC000000"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date"
+                android:layout_marginStart="1.5dp"
+                android:layout_marginTop="1.5dp"
+                android:layout_marginEnd="1.5dp"
+                android:layout_marginBottom="1.5dp"
+                android:orientation="vertical"
+                android:padding="-5dp">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="name"
+                    android:textColor="#CC000000" />
+
+                <TextView
+                    android:id="@+id/method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="Method"
+                    android:textColor="#CC000000" />
+
+                <TextView
+                    android:id="@+id/earn_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="earn_money"
+                    android:textColor="#CC000000" />
+
+                <TextView
+                    android:id="@+id/numberWallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/doppio_one"
+                    android:textColor="#CC000000" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="#26C7DC"
+                android:elevation="2dp"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:gravity="center"
+                    android:textSize="19dp"
+                    android:id="@+id/none"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/doppio_one"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/cardView"
+        android:id="@+id/Image"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">BKZ</string>
+
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="don_t_have_an_account__register_now_string">Dont have an account? Register Now</string>
+    <string name="don_t_have_an_account__login_now_string">Dont have an account? Login Now</string>
+    <string name="or_login_with_string">Or Login with</string>
+    <string name="or_register_with_string">Or Register with</string>
+    <string name="login_ek3_string">Login</string>
+    <string name="forgot_password__string">Forgot Password?</string>
+    <string name="enter_your_password_string">Enter your password</string>
+    <string name="enter_your_email_string">Enter your email</string>
+    <string name="welcome_back__glad_to_see_you__again__string">Welcome back! Glad to see you, Again!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reset">Hello Dear user
+    You can reset your password by simple steps.First enter your email which was registered previously.
+    Click on submit button then you will get a email and check it and reset your password kindly.
+    </string>
+    <string name="help">
+        1.If you forgot your password try to logout from the application and select "Recover Password"
+        enter your email and submit it.You will get a mail from app and recover your password."\n""\n"
+
+        2.Any payment issues go to profile select ContactUs option and send your issue to us we will
+        rectify as soon as possible."\n""\n"
+
+        3.We try to fix some bugs in this app.In case you have find any bugs in this application send
+        me a mail about that bug and you will get to chance a 1000 coins."\n""\n"
+
+        4.Once you have submit your payment.We will add money in which payment method you have ro selected
+        so carefully entered valid details and submit it.""\n"\n"
+
+        5.Once you registered in this application you cannot add second account.Please try to remember your
+        registered information.
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </string>
+</resources>
+

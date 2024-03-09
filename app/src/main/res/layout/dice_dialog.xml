@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#990288D1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:gravity="center"
+                android:id="@+id/linear_layout"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="40dp"
+                    android:minHeight="30dp"
+                    android:background="@drawable/edittext"
+                    android:id="@+id/number1"
+                    android:text="1"
+                    android:clickable="true"
+                    android:textColor="#E91E63"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="40dp"
+                    android:minHeight="30dp"
+                    android:clickable="true"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/edittext"
+                    android:id="@+id/number2"
+                    android:text="2"
+                    android:textColor="#E91E63"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="40dp"
+                    android:minHeight="30dp"
+                    android:clickable="true"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/edittext"
+                    android:id="@+id/number3"
+                    android:text="3"
+                    android:textColor="#E91E63"/>
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18sp"
+                android:layout_marginEnd="18sp"
+                android:gravity="center"
+                android:clickable="true"
+                android:layout_below="@+id/linear_layout"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="40dp"
+                    android:minHeight="30dp"
+                    android:background="@drawable/edittext"
+                    android:id="@+id/number4"
+                    android:text="4"
+                    android:clickable="true"
+                    android:textColor="#E91E63"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="40dp"
+                    android:minHeight="30dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/edittext"
+                    android:id="@+id/number5"
+                    android:text="5"
+                    android:clickable="true"
+                    android:textColor="#E91E63"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="40dp"
+                    android:minHeight="30dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/edittext"
+                    android:id="@+id/number6"
+                    android:text="6"
+                    android:clickable="true"
+                    android:textColor="#E91E63"/>
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1872A4"
+    android:orientation="vertical"
+    tools:context=".DepostActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/earning_coins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/coin_bg"
+        android:drawableEnd="@drawable/baseline_paid_24"
+        android:drawablePadding="8dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:minWidth="90dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/QRcode"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@+id/earning_coins"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/qr_code" />
+
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_below="@+id/QRcode"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/copy"
+            android:layout_margin="5dp"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/rectangle_173_shape"
+            android:textColor="#ffffff"
+            android:text="نسخ"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/wallet"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:gravity="center"
+            android:background="@drawable/edittext"
+            android:textColor="@color/colorAccent"
+            android:text="dc6cb21f8e2da560ef3abcf44eb206edf9299c500f7f0a502d6d7e0e4682edb1"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/l"
+        android:textColor="@color/colorAccent"
+        android:text="ستصل SWEAT-NEAR يرجي عدم أعادة شحن الأصول الأخري غير الأموال الي حسابك خلال حوالي 1 الي 3 دقائق بعد أعادة الشحن"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/m"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/s"
+        android:gravity="center"
+        android:text="أذا لم يصل لفترة طويلة يرجي تحديث هذه الصفحة"
+        android:textColor="#BD1515"
+        android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/mm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/m"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="*يرجي أضافة أسكرين للتأكد من الأيداع*"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/depost_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/mm"
+                android:src="@drawable/addphoto" />
+
+            <EditText
+                android:id="@+id/coinsEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/depost_image"
+                android:padding="5dp"
+                android:hint="اكتب عدد العملات اللي تريد أيداعها في حسابك"
+                android:background="@drawable/edittext"
+                android:textColor="@color/colorAccent"
+                android:inputType="number"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coinsEdit"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rectangle_173_shape"
+                android:gravity="center"
+                android:text="أكتملت عملية أعادة الشحن"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <ProgressBar
+                android:id="@+id/pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/depost_image"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:visibility="gone"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

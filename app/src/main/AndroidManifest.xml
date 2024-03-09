@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.robot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Admin.AdminWithdrawActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminDepostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.PaymentHestoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".Admin.AdminLoginActivity"
+            android:exported="true"
+            android:parentActivityName=".ProfileActivity"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".Admin.Info"
+            android:exported="true"
+            android:parentActivityName=".ProfileActivity"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".Admin.MainAdminActivity"
+            android:exported="true"
+            android:parentActivityName=".ProfileActivity"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".PaymentHistoryActivity"
+            android:exported="true"
+            android:parentActivityName=".ProfileActivity"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".InviteActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".VipActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".WithdrawActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".DepostActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".RobotActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

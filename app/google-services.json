@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "108769621393",
+    "firebase_url": "https://new-project-robot-9584d-default-rtdb.firebaseio.com",
+    "project_id": "new-project-robot-9584d",
+    "storage_bucket": "new-project-robot-9584d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108769621393:android:667fc32e773ea3b0e81630",
+        "android_client_info": {
+          "package_name": "com.example.robot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3HjU-P5ialAq63AJDVGWfvekry1l8aDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

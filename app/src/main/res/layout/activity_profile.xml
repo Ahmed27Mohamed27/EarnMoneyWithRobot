@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#1872A4"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:id="@+id/relative"
+        android:background="@drawable/profile_bg">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            app:title=""
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/Theme.AppCompat.Light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/coinsTv"
+            android:drawableEnd="@drawable/baseline_paid_24"
+            android:drawablePadding="8dp"
+            android:layout_margin="8dp"
+            android:minWidth="90dp"
+            android:gravity="center"
+            android:background="@drawable/coin_bg"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:text="0"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:civ_border_color="@android:color/black"
+            app:civ_border_width="1.5dp"
+            android:src="@drawable/profile"
+            android:id="@+id/profile"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="-25dp"
+            android:layout_marginBottom="86dp"
+            android:id="@+id/pick"
+            android:layout_toEndOf="@id/profile"
+            android:src="@drawable/ic_baseline_photo_camer" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="الأسم"
+                android:textColor="@android:color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="البريد الألكتروني"
+                android:textColor="@android:color/white"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="صفحة الروبوت"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:id="@+id/robot"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#848484"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="صفحة VIP"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:id="@+id/vip"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#848484"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="صفحة كود الدعوة"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:id="@+id/invite"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#848484"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="صفحة السحب"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:id="@+id/withdraw"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#848484"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="صفحة الأيداع"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:id="@+id/depost"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#848484"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="سجل عمليات الايداع والسحب"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:id="@+id/redeemHistory"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#848484"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الدعم الفني"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:id="@+id/contact"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp"
+            android:background="#848484"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تسجيل الخروج"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:id="@+id/logout" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn"
+        android:text="تحديث"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/updateBtn"
+        android:minWidth="150dp"
+        android:visibility="gone"
+        android:textSize="18sp" />
+
+</RelativeLayout>

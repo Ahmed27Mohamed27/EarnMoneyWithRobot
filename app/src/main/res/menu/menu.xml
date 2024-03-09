@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:iconTint="#0AB4FF"
+        android:icon="@drawable/icon_ionic_md_home"
+        android:title="الصفحة الرئيسية"/>
+    <item
+        android:id="@+id/vip"
+        android:enabled="true"
+        android:icon="@drawable/baseline_verified_user_24"
+        android:title="VIP"/>
+    <item
+        android:id="@+id/robot"
+        android:enabled="true"
+        android:iconTint="#0AB4FF"
+        android:icon="@drawable/smart_toy"
+        android:title="الروبوتات"/>
+    <item
+        android:id="@+id/account"
+        android:enabled="true"
+        android:icon="@drawable/baseline_person_pin_24"
+        android:title="حسابك"/>
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="32dp"
+
+        app:cardUseCompatPadding="true"
+        android:elevation="5dp"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="أيداع"
+
+                android:gravity="center"
+                android:textSize="18sp"
+                android:id="@+id/method"
+                android:fontFamily="@font/doppio_one"
+                android:textColor="#FF9800"
+                android:background="@android:color/black"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/method"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:padding="4dp"
+                    android:inputType="number"
+                    android:gravity="start"
+
+                    android:layout_marginTop="5dp"
+                    android:hint="اكتب عدد العملات"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/payment_number"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:text="Confirm"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/doppio_one"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="4dp"
+                android:id="@+id/confirm"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#817E7E"
+                android:textSize="18sp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@id/confirm"
+                android:layout_margin="10dp"
+                android:text="Cancel"
+                android:fontFamily="@font/doppio_one"
+                android:layout_gravity="end"
+                android:id="@+id/cancel"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
